@@ -26,6 +26,8 @@ const morgan = require("morgan");
 // DATABASE CONNECTION
 ////////////////////////////////
 
+mongoose.connect(MONGODB_URI);
+
 // Connection Events
 mongoose.connection
   .on("open", () => console.log("This is my awesome amazing connection man"))
